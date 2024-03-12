@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-class selectors</title>
+</head>
+<style>
+    button:hover {
+        background-color: red;
+        color: white;
+    }
+
+    button:active {
+        background-color: blue;
+    }
+
+    a:visited {
+        color: green;
+    }
+
+    input:focus {
+        background-color: yellow;
+        color: green;
+    }
+
+    /*p:nth-child(2n) {
+        background-color: red;
+    }-->*/
+
+    p:first-child {
+        background-color: yellow;
+    }
+
+    p:last-child {
+        background-color: red;
+    }
+</style>
+<body>
+    <p>One</p>
+    <p>Two</p>
+    <div>
+        <p>Three</p>
+        <p>Four</p>
+    </div>
+    <button>
+        Click me
+    </button>
+    <br/>
+    <a href="####">
+        Click here
+    </a>
+    <br/>
+    <input type="text"/>
+</body>
+</html>
