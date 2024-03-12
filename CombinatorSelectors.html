@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinator selectors</title>
+    <style>
+        div h1 {
+            color: red;
+        }
+
+        div > h2 {
+            color: blue;
+        }
+
+        h1 + h2 {
+            color: aqua;
+        }
+
+        h3 ~ h4 {
+            color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>I am inside div 1</h1>
+        <h2>I am inside div 2</h2>
+        <section>
+            <h1>I am inside div 1</h1>
+            <h2>I am inside div 2</h2>
+        </section>
+    </div>
+    <h1>I am outside div 1</h1>
+    <h2>I am outside div 2</h2>
+    <h2>I am outside div 2</h2>
+    <h3>I am outside div 3</h1>
+    <h4>I am outside div 4</h2>
+    <h4>I am outside div 4</h2>
+    <h4>I am outside div 4</h2>
+    <h4>I am outside div 4</h2>
+    <h3>I am outside div 3</h1>
+</body>
+</html>
