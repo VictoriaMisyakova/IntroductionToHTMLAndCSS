@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute selectors</title>
+</head>
+<style>
+    a[href^="http"] {
+        background-color: red;
+    }
+
+    input[type^="email"] {
+        background-color: green;
+        color: blue;
+    }
+</style>
+<body>
+    <a href="a">Internal 1</a>
+    <a href="https://www.youtube.com/">YouTube</a>
+    <a href="a">Internal 2</a>
+    <a href="https://www.google.com/">Google</a>
+    <a href="a">Internal 3</a>
+    <br/>
+    <input type="text">
+    <input type="email">
+    <input type="number">
+    <input type="password">
+</body>
+</html>
