@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo elements selectors</title>
+</head>
+<style>
+    #chat::before {
+        content: '';
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-color: green;
+        border: none;
+        border-radius: 50px;
+    }
+
+    #chat::after {
+        content: 'New message';
+        background-color: gray;
+        color: black;
+        opacity: 0.5;
+        border: none;
+        border-radius: 50px;
+        margin-left: 9px;
+        padding: 2px;
+    }
+
+    #newcss::first-letter {
+        background-color: yellow;
+    }
+</style>
+<body>
+    <p id="chat">Loren Ipsum</p>
+    <p id="newcss">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+</body>
+</html>
