@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS positions</title>
+</head>
+<style>
+    #first {
+        background-color: red;
+        height: 100px;
+        position: relative;
+    }
+
+    #second {
+        background-color: blue;
+        height: 100px;
+        opacity: 0.5;
+        position: relative;
+        bottom: 10px;
+        left: 100px;
+    }
+
+    #third {
+        background-color: green;
+        height: 100px;
+        opacity: 0.5;
+        position: absolute;
+        top: 50px;
+    }
+    #fourth {
+        background-color: yellow;
+        height: 100px;
+        opacity: 0.5;
+        position: fixed;
+        top: 0px;
+    }
+</style>
+<body>
+    <div id="first">
+        First div
+        <div id="third">
+            Third div
+        </div>
+    </div>
+    <div id="second">
+        Second div
+    </div>
+    <div id="fourth">
+        Fourth div
+    </div>
+    <div id="second">
+        Second div
+    </div>
+    <div id="second">
+        Second div
+    </div>
+    <div id="second">
+        Second div
+    </div>
+    <div id="second">
+        Second div
+    </div>
+    <div id="second">
+        Second div
+    </div>
+    <div id="second">
+        Second div
+    </div>
+    <div id="second">
+        Second div
+    </div>
+    <div id="second">
+        Second div
+    </div>
+    <div id="second">
+        Second div
+    </div>
+    <div id="second">
+        Second div
+    </div>
+</body>
+</html>
