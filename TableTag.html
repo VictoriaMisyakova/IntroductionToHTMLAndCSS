@@ -5,8 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Table tag</title>
 </head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    table {
+        margin: 10px;
+        width: 500px;
+    }
+
+    table, tr, td, th {
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: left;
+        padding: 2px;
+    }
+
+    th {
+        background-color: black;
+        color: white;
+        font-weight: bold;
+    }
+
+    tr:nth-child(even) {
+        background-color: antiquewhite;
+    }
+
+    td:hover {
+        background-color: aliceblue;
+        color: blue;
+    }
+</style>
 <body>
-    <table border="1" width="300" cellspacing="10">
+    <table >
         <thead>
             <tr>
                 <th>Country</th>
@@ -15,22 +48,26 @@
         </thead>
         <tbody>
             <tr>
-                <td align="center">India</td>
-                <td align="center">80%</td>
+                <td>India</td>
+                <td>80%</td>
             </tr>
             <tr>
-                <td align="center">China</td>
-                <td align="center">75%</td>
+                <td>China</td>
+                <td>75%</td>
             </tr>
             <tr>
-                <td align="center">Egypt</td>
-                <td align="center">60%</td>
+                <td>Egypt</td>
+                <td>60%</td>
+            </tr>
+            <tr>
+                <td>Egypt</td>
+                <td>60%</td>
             </tr>
         </tbody>
         <tfoot>
             <tr>
-                <td align="center">World</td>
-                <td align="center">76%</td>
+                <td>World</td>
+                <td>76%</td>
             </tr>
         </tfoot>
     </table>
